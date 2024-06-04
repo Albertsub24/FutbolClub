@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 public class Equipo
 {
@@ -19,7 +20,11 @@ public class Equipo
 		}
 		public string ViewJugadores()
 		{
-
+			string salida = "";
+			foreach (Jugador jugador in jugadores)
+			{
+				salida += jugador.ToString();
+			} 
 		}
     }
 
