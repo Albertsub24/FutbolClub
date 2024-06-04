@@ -21,9 +21,12 @@ internal class Equipo
 		string salida = "";
 		foreach (Jugador jugador in jugadores)
 		{
-			salida += jugador.ToString();
+			salida += "\n"+jugador.ToString();
 		}
 		return salida;
 	}
-
+    public override string ToString()
+    {
+        return this.Nombre+ViewJugadores();
+    }
 }
