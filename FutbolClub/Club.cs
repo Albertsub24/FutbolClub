@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace FutbolClub
 {
-    internal class Program
+    internal class Club
     {
-        static void Main(string[] args)
+
+        public void MostrarMenu()
         {
-            Inicio();
+
         }
+
     }
 }
