@@ -12,7 +12,7 @@ namespace FutbolClub
 		{
 			Id = id;
 			Nombre = nombre;
-			List < Jugador > = new List<Jugador>();
+			List <Jugador> jugadores = new List<Jugador>();
 		}
 		public void AddJugador(Jugador jugador)
 		{
