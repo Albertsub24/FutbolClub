@@ -1,8 +1,9 @@
 ﻿// ClubFutbol/Club.cs
+
 using System;
 using System.Collections.Generic;
 
-namespace ClubFutbol
+namespace FutbolClub
 {
     class Club
     {

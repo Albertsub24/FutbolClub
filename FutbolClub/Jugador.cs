@@ -13,6 +13,7 @@ public class Jugador
         "Portero",
         "Mediocampo"
     };
+
     public string NumeroCamiseta { get; set; }
     public Equipo EquipoAsignado { get; set; }
     public string Posicion { get; set; }
@@ -24,18 +25,8 @@ public class Jugador
         NumeroCamiseta = numeroCamiseta;
     }
 
-           public override string ToString()
-        {
-            return $"{NumeroCamiseta} - {Nombre} ({Posicion})";
-        }
-    public Jugador CrearJugador(int id, string nombre, string posicion, string numeroCamiseta, Equipo equipoAsignado) =>
-        new Jugador(Id, Nombre, Posicion, NumeroCamiseta, EquipoAsignado);
-    public Jugador CambiarPosicion(Jugador jugador, string posicion)
+    public override string ToString()
     {
-        if (!posiciones.Contains(posicion))
-            posiciones.Add();
-        jugador.Posicion = posicion;
-        return jugador;
+        return $"{NumeroCamiseta} - {Nombre} ({Posicion})";
     }
-    
 }
