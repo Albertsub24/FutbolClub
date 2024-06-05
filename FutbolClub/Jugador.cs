@@ -14,11 +14,11 @@ public class Jugador
         "Mediocampo"
     };
 
-    public string NumeroCamiseta { get; set; }
+    public int NumeroCamiseta { get; set; }
     public Equipo EquipoAsignado { get; set; }
     public string Posicion { get; set; }
 
-    public Jugador(string nombre, string posicion, string numeroCamiseta)
+    public Jugador(string nombre, string posicion, int numeroCamiseta)
     {
         Nombre = nombre;
         Posicion = posicion;
