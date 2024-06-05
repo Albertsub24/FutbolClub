@@ -42,7 +42,7 @@ namespace FutbolClub
 
             if (jugador != null && equipo != null)
             {
-                equipo.AddJugador(jugador);
+                equipo.AgregarJugador(jugador);
                 Console.WriteLine($"Jugador {jugador.Nombre} asignado al equipo {equipo.Nombre}");
             }
             else
@@ -57,7 +57,7 @@ namespace FutbolClub
 
             if (equipo != null)
             {
-                equipo.ViewJugadores();
+                equipo.ListarJugadores();
             }
             else
             {
