@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-internal class Equipo
+public class Equipo
 {
 	int Id { get; set; }
 	string Nombre { get; set; }
@@ -10,7 +10,7 @@ internal class Equipo
 	{
 		Id = id;
 		Nombre = nombre;
-		List < Jugador > = new List<Jugador>();
+		List<Jugador> = new List<Jugador>();
 	}
     public void AddJugador(Jugador jugador)
     {
