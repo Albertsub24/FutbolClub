@@ -1,32 +1,34 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 
-public class Equipo
+namespace FutbolClub
 {
-	int Id { get; set; }
-	string Nombre { get; set; }
-	List<Jugador> jugadores;
-	public Equipo(int id, string nombre) 
-	{
-		Id = id;
-		Nombre = nombre;
-		List<Jugador> = new List<Jugador>();
-	}
-    public void AddJugador(Jugador jugador)
+    public class Equipo
     {
-        jugadores.Add(jugador);
-	}
-	public string ViewJugadores()
-	{
-		string salida = "";
-		foreach (Jugador jugador in jugadores)
-		{
-			salida += "\n"+jugador.ToString();
-		}
-		return salida;
-	}
-    public override string ToString()
-    {
-        return this.Nombre+ViewJugadores();
+        //public int Id { get; set; }
+        public string Nombre { get; set; }
+        List<Jugador> Jugadores;
+
+        //public Equipo(int id, string nombre)
+        public Equipo(string nombre)
+        {
+            //Id = id;
+            Nombre = nombre;
+            List<Jugador> Jugadores = new List<Jugador>();
+        }
+
+        public void AgregarJugador(Jugador jugador)
+        {
+            Jugadores.Add(jugador);
+        }
+
+        public void ListarJugadores()
+        {
+            foreach (var jugador in Jugadores)
+            {
+                Console.WriteLine(jugador);
+            }
+        }
     }
 }
