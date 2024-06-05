@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 public class Jugador
 {
@@ -25,12 +26,12 @@ public class Jugador
         NumeroCamiseta = numeroCamiseta;
         EquipoAsignado = equipoAsignado;
     }
-    
     public Jugador CrearJugador(int id, string nombre, string posicion, string numeroCamiseta, Equipo equipoAsignado) =>
         new Jugador(Id, Nombre, Posicion, NumeroCamiseta, EquipoAsignado);
-
     public Jugador CambiarPosicion(Jugador jugador, string posicion)
     {
+        if (!posiciones.Contains(posicion))
+            posiciones.Add();
         jugador.Posicion = posicion;
         return jugador;
     }
