@@ -6,21 +6,18 @@ namespace FutbolClub
 {
     public class Equipo
     {
-        //public int Id { get; set; }
         public string Nombre { get; set; }
-        List<Jugador> Jugadores;
+        public List<Jugador> Jugadores { get; set; }
 
-        //public Equipo(int id, string nombre)
         public Equipo(string nombre)
         {
-            //Id = id;
             Nombre = nombre;
-            List<Jugador> Jugadores = new List<Jugador>();
+            Jugadores = new List<Jugador>();
         }
 
         public void AgregarJugador(Jugador jugador)
         {
-            Jugadores.Add(jugador);
+                Jugadores.Add(jugador);
         }
 
         public void ListarJugadores()
