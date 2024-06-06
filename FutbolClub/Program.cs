@@ -4,10 +4,10 @@ namespace FutbolClub
 {
     class Program
     {
+        static Club club = new Club();
+
         static void Main(string[] args)
         {
-            Club club = new Club();
-
             Equipo equipo1 = new Equipo("Barcelona");
             club.AgregarEquipo(equipo1);
 
